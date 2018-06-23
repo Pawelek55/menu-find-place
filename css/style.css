@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+/*            title         */
+.box{
+    display: inline-block;
+    width: 33.3333333%;
+    float:left;
+    font-size: 100px;
+    min-height: 1px;
+}
+
+.box-left{
+    text-align: right;
+}
+
+.box-right{
+    text-align: left;     
+}
+
+/*            stripes             */
+.stripe{
+    width: 33.33333333%;
+    background-color: #d8af54;
+    height: 100px;    
+    text-align: center;
+    margin: 20px auto;
+    float: left;
+    position: relative;
+    color: #fff;
+}
+.secound-stripe{
+    width: 80%;
+    margin: auto; 
+}
+
+.third-stripe{
+    width: 60%;
+    margin: auto;
+}
+
+/*            radius         */
+.left{
+    border-bottom-left-radius: 100px;
+}
+
+.middle{
+    border-radius: 0;
+}
+
+.right{
+    border-bottom-right-radius: 100px;
+}
+
+/*     tekty z opaisami na skrajnych lewych i prawych sześcianach     */
+
+.one h2{
+    width: 100%;
+    height: 33.333333%;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.one .text{
+    border: 3px solid #fff;
+    width: 60%;
+    text-align: center;
+    display: inline-block;
+    margin: 9px 0;
+    position: relative;
+}
+
+.one .text::before{
+    content: "";
+    border: 15px solid #fff;
+    display: block;
+    position: absolute;
+    left: -11%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    transform: translateY(-50%);
+}
+
+.one .text::after{
+    content: "";
+    border: 15px solid #fff;
+    display: block;
+    position: absolute;
+    right: -11%;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    transform: translateY(-50%);
+}
+
+/*        logo         */
+
+.border{
+    width:600px;
+    height:600px;
+    position: absolute;
+    border: 10px solid #063f9b;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+figure{
+    margin: 0;
+}
+.logo{
+    background-image: url(../css/search_inner.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    border: 10px solid #d8af54;
+    border-radius: 50%;
+}
